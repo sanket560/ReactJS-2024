@@ -1,8 +1,39 @@
-# React + Vite
+## Usage
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+The main component of the app is the `App` component, defined in `App.js`. It uses the `useState` hook to manage the state of the `counter` variable, which starts at 0. Two functions, `add` and `mins`, are defined to handle the increment and decrement operations, respectively. The counter value is displayed along with two buttons, "+" and "-", to perform the respective operations.
 
-Currently, two official plugins are available:
+### Code Explanation
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The `useState` hook is used to declare a state variable `counter` and its corresponding updater function `setCounter`. The `add` function increments the counter by 1 if the current value is less than or equal to 9, and the `mins` function decrements the counter by 1 if the current value is not equal to 0.
+
+```javascript
+function App() {
+  let [counter, setCounter] = useState(0);
+
+  const add = () => {
+    if (counter <= 9) {
+      counter = counter + 1;
+      setCounter(counter);
+    }
+  };
+
+  const mins = () => {
+    if (counter !== 0) {
+      counter = counter - 1;
+      setCounter(counter);
+    }
+  };
+
+  return (
+    <>
+      <h2>Counter Value: {counter}</h2>
+      <button onClick={add}>+</button>
+      <br />
+      <br />
+      <button onClick={mins}>-</button>
+    </>
+  );
+}
+
+export default App; 
+```
