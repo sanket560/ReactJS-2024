@@ -1,0 +1,5 @@
+In React, "props" is short for "properties," and they are a way to pass data from one component to another. Imagine components as building blocks of your React application - they are like individual pieces that work together to create the whole picture.
+
+Now, let's say you have a parent component and a child component. The parent wants to share some information with the child, like a message or a value. This is where props come into play.
+
+In our case parent component is App.js and child component is Card.js . So  parent component `(app.js )` passes the msg username as prop or properties to child component `(card.js)`. Then child component `(card.js)` recevies this prop as an argument in function like `(props)` or using distructur `({username})` and then it will use in his body like an object.
