@@ -18,6 +18,6 @@
 
 9 . [Context API ( Props-drilling )](09_ContextAPI)
 
-10 . [Redux & Redux toolkit using TODO APP](10_Redux)
+10 . [Redux & Redux toolkit](10_ReduxToolkit)
 
 ## [Reactjs interview questions](reactjs-interview-questions)
