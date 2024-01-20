@@ -9,7 +9,7 @@ Redux is not necessary for every project.
 You may need Redux if you don’t want to do props drilling (passing props too deep).
 If you are still confused about Redux, just think about the React state. The only difference is you can access the state from anywhere
 
-<img src="./src/redux tool kit workflow.png" alt="Alt text" title="Optional title">
+<img src="./src/redux tool kit workflow.png" style="width:100%;" alt="work flow" title="work flow">
 
 **Step 1 – Install Redux and Redux Toolkit package in an react app** <br>
 `npm install --save react-redux @reduxjs/toolkit`
